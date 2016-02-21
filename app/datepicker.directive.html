@@ -1,5 +1,4 @@
- 
-    <p>selected item is : {{selectedItem}}</p>
-    <p> property of selected item is : {{selectedItem.property}} </p>
-    <select ng-model="selectedItem" ng-options="month.name for month in months" ng-change="getRange()"></select>
+
+    <select ng-model="selectedItem" ng-options="month.property as month.name for month in months" ng-change="getRange()" value={{selectedItem}}></select>
+    <select ng-model="selectedYear" ng-options="option for option in years" ng-change="getYearRange()"></select>
     <calendar></calendar> 

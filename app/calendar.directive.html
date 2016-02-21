@@ -1,7 +1,8 @@
 <div class="container-fluid">
     <div class="col-md-12">
         <div class="row">
-            <div class="span" ng-repeat="day in range.days">
+            <div ng-class="{other : day.month 
+            !== range.start.getMonth()}" class="span" ng-repeat="day in range.days">
             <span>{{day.date | date: 'd'}}</span>
             </div>
         </div>
