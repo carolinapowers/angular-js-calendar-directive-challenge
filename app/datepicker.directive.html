@@ -1,6 +1,5 @@
  
     <p>selected item is : {{selectedItem}}</p>
     <p> property of selected item is : {{selectedItem.property}} </p>
-    <select ng-model="selectedItem" ng-options="month.name for month in months" ng-change="submit()"></select>
-<!--      <button class="btn btn-default" type="submit" value="submit">Submit</button>-->
+    <select ng-model="selectedItem" ng-options="month.name for month in months" ng-change="getRange()"></select>
     <calendar></calendar> 
